@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string-array name="Classe">
+        <item>ALL Class</item>
+        <item>1ere</item>
+        <item>2eme</item>
+        <item>3eme</item>
+        <item>4eme</item>
+        <item>5eme</item>
+    </string-array>
+    <string-array name="Filiere">
+        <item>SIM</item>
+        <item>NIDS</item>
+        <item>TWIN</item>
+        <item>DS</item>
+        <item>BI</item>
+        <item>CLOUD</item>
+        <item>SAE</item>
+        <item>SE</item>
+        <item>GAMIX</item>
+        <item>AI</item>
+        <item>WIN</item>
+    </string-array>
+</resources>
