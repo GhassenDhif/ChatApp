@@ -1,3 +1,12 @@
 package com.example.myapplication.models.modelResponse
 
-data class LoginResponse()
+import com.example.myapplication.models.User
+
+
+data class LoginResponse(
+    val message: String,
+    val token: String,
+    val _id: String,
+)
+
+

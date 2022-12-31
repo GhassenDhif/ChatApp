@@ -1,3 +1,5 @@
 package com.example.myapplication.models.modelResponse
 
-data class DeteleResponse()
+data class DeteleResponse(
+    val message: String
+)

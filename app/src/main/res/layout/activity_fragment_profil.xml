@@ -4,6 +4,316 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragmentProfil">
+    android:layout_centerInParent="true"
+    android:background="#F5F5F5"
+    android:gravity="center"
+    tools:context=".fragmentProfile">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="360dp"
+                        android:background="@drawable/top_background"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/shapeableImageView"
+                        layout_centreInParent="true"
+                        android:layout_width="98dp"
+                        android:layout_height="98dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="30dp"
+                        android:elevation="15dp"
+                        android:padding="5dp"
+                        android:src="@drawable/manyar1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.498"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:shapeAppearanceOverlay="@style/Circular" />
+
+                    <TextView
+                        android:id="@+id/TX1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Menyar Dhif"
+                        android:textColor="#ffffff"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="@+id/shapeableImageView"
+                        app:layout_constraintStart_toStartOf="@+id/shapeableImageView"
+                        app:layout_constraintTop_toBottomOf="@+id/shapeableImageView" />
+
+                    <TextView
+                        android:id="@+id/TX2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="dhif.menyar@esprit.tn"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp"
+
+                        app:layout_constraintEnd_toEndOf="@+id/TX1"
+                        app:layout_constraintStart_toStartOf="@+id/TX1"
+                        app:layout_constraintTop_toBottomOf="@+id/TX1" />
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/circles" />
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="24dp"
+                        android:layout_marginBottom="24dp"
+                        android:background="@drawable/white_background"
+                        android:elevation="3dp"
+                        android:orientation="vertical"
+                        android:paddingBottom="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/TX2">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/TX14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Email"
+                                android:textAlignment="center"
+                                android:textColor="#ED3736"
+                                android:textSize="18sp" />
+
+                            <EditText
+                                android:id="@+id/email"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:ems="10"
+                                android:inputType="textPersonName"
+                                android:text="dhif.menyar@esprit.tn"
+                                tools:ignore="TouchTargetSizeCheck" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="24dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/TX13"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Username"
+                                android:textAlignment="center"
+                                android:textColor="#ED3736"
+                                android:textSize="18sp" />
+
+                            <EditText
+                                android:id="@+id/username"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:inputType="textPersonName"
+                                android:text="Menyar Dhif"
+                                tools:ignore="TouchTargetSizeCheck" />
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/view"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="6dp"
+                            android:background="#D9D9D9" />
+
+                        <LinearLayout
+                            android:layout_width="348dp"
+                            android:layout_height="48dp"
+                            android:layout_margin="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/TX12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="Genre"
+                                android:textAlignment="center"
+                                android:textColor="#ED3736"
+                                android:textSize="18sp" />
+
+                            <RadioGroup
+                                android:id="@+id/radGROUP"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checkedButton="@id/radHomme"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:padding="10dp"
+                                android:textAlignment="center"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.502"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <RadioButton
+                                    android:id="@+id/radHomme"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="30dp"
+                                    android:minHeight="48dp"
+                                    android:text="Homme"
+                                    android:textAlignment="center"
+                                    android:textSize="15dp"
+                                    android:textStyle="bold"
+                                    tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+                                <RadioButton
+                                    android:id="@+id/radFemme"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="30dp"
+                                    android:minHeight="48dp"
+                                    android:text="Femme"
+                                    android:textAlignment="center"
+                                    android:textSize="15dp"
+                                    android:textStyle="bold"
+                                    tools:ignore="TouchTargetSizeCheck" />
+                            </RadioGroup>
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/view2"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="6dp"
+                            android:background="#D9D9D9" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:id="@+id/TX11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Email"
+                                android:textAlignment="center"
+                                android:textColor="#ED3736"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/tB"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/alike"
+                                android:text="00/00/0000"
+                                android:textColor="@color/black"
+                                android:textSize="20dp" />
+
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/dateBtn"
+                                android:text="Pick Date"
+                                android:backgroundTint="#ED3736"
+                                android:fontFamily="@font/aclonica"
+                                android:paddingStart="20dp"
+                                android:paddingTop="10dp"
+                                android:paddingEnd="20dp"
+                                android:paddingBottom="20dp"
+
+                                app:cornerRadius="20dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Button
+                android:id="@+id/b4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="24dp"
+                android:background="@drawable/background_button"
+                android:text="Enregistrer"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

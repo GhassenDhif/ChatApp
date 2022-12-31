@@ -1,4 +1,6 @@
 package com.example.myapplication.models.modelRequest
 
-class ActivateRequest {
-}
+data class ActivateRequest(
+    val Email: String,
+    val Code: String,
+)

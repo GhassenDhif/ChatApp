@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     android:background="@drawable/wave__3_"
     android:fillViewport="true"
-    android:translationX="-3dp"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -54,6 +53,7 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
+
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/FullName"
             android:layout_width="match_parent"
@@ -64,6 +64,7 @@
             app:boxStrokeColor="@color/black">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/aclonica"
@@ -85,6 +86,7 @@
             app:boxStrokeColor="@color/black">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/aclonica"
@@ -107,6 +109,7 @@
             app:passwordToggleEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etPass"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/aclonica"
@@ -129,6 +132,7 @@
             app:passwordToggleEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etvPass"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/aclonica"
@@ -287,9 +291,9 @@
                 android:layout_height="50dp"
                 android:fontFamily="@font/aclonica"
                 android:gravity="center"
-                android:text="Date_Naissance: "
+                android:text="Date_Naissance:"
                 android:textColor="@color/black"
-                android:textSize="25dp" />
+                android:textSize="23dp" />
             <TextView
                 android:id="@+id/tB"
                 android:layout_width="wrap_content"
@@ -328,6 +332,7 @@
 
 
         </LinearLayout>
+
 
         <FrameLayout
             android:layout_width="match_parent"

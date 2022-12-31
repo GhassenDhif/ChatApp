@@ -1,9 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background98"
     tools:context=".Admin2">
+     <com.google.android.material.appbar.AppBarLayout
+         android:id="@+id/appbar"
+         android:background="#cc171e"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+     <androidx.appcompat.widget.Toolbar
+         android:id="@+id/myToolbar"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:padding="5dp"
+         app:title="ALLUsers"
+         app:titleTextColor="@color/white" />
+          <com.google.android.material.tabs.TabLayout
+              android:id="@+id/tabs"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_above="@+id/fragment_container"
+              android:layout_marginLeft="5dp"
+              android:backgroundTint="@color/primary"
+              app:tabIndicatorColor="@color/white"
+              app:tabSelectedTextColor="@color/white"
+              app:tabTextColor="@color/secondaryVariant"
+              tools:ignore="SpeakableTextPresentCheck" />
+     </com.google.android.material.appbar.AppBarLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+     <androidx.recyclerview.widget.RecyclerView
+         android:id="@+id/recyclerView"
+         android:layout_width="match_parent"
+         android:layout_height="581dp"
+         android:layout_below="@+id/appbar"
+         android:layout_alignParentStart="true"
+         android:layout_alignParentEnd="true"
+         android:layout_marginStart="0dp"
+         android:layout_marginTop="-2dp"
+         android:layout_marginEnd="0dp"
+         android:padding="4dp"
+         android:scrollbars="vertical" />
+
+     <com.google.android.material.floatingactionbutton.FloatingActionButton
+         android:id="@+id/floating_action_button"
+         android:layout_width="wrap_content"
+         android:layout_height="56dp"
+         android:layout_alignParentEnd="true"
+         android:layout_alignParentBottom="true"
+         android:layout_gravity="bottom|right"
+         android:layout_marginStart="16dp"
+         android:layout_marginEnd="22dp"
+         android:layout_marginBottom="22dp"
+         android:contentDescription="fab"
+         app:backgroundTint="@color/primary"
+         app:srcCompat="@drawable/ic_baseline_add_comment_24"
+         app:tint="@color/white" />
+
+</RelativeLayout>

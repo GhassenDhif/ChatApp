@@ -1,9 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SettingsFragment">
+    android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_baseline_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Settings"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/shapeableImageView"
+                layout_centreInParent="true"
+                android:layout_width="98dp"
+                android:layout_height="98dp"
+                android:layout_gravity="center"
+                android:elevation="15dp"
+                android:padding="5dp"
+                android:src="@drawable/manyar1"
+                app:shapeAppearanceOverlay="@style/Circular" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Nour Dhif"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="65456486721"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="40dp"
+                android:orientation="vertical"
+                android:padding="15dp">
+                
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src=""
+                        android:padding="12sp"/>
+                    
+                    
+                    
+                    
+                    
+                </RelativeLayout>
+                
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
