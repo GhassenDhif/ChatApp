@@ -8,11 +8,17 @@
 
 
     <color name="primary">#cc171e</color>
+    <color name="primary_dark">#4E0707</color>
     <color name="secondary">#96979b</color>
     <color name="secondaryVariant">#babbbd</color>
     <color name="clair">#dfe0e2</color>
     <color name="white">#FFFFFFFF</color>
     <color name="green">#019A01</color>
+    <color name="notification">#13B2C3</color>
+    <color name="private_account">#E6A326</color>
+    <color name="security">#D95F69</color>
+    <color name="night_mode">#6124B1</color>
+
 
 
     <color name="black">#000000</color>

@@ -2,7 +2,6 @@ package com.example.myapplication.api
 
 import com.example.myapplication.models.User
 import com.example.myapplication.models.modelResponse.*
-import com.example.myapplication.models.users
 import retrofit2.Call
 import retrofit2.http.Body
 import retrofit2.http.DELETE
@@ -35,11 +34,9 @@ interface ApiInterface {
     @Headers("Content-Type:application/json")
     @PUT("api/user/update")
     fun updateUser(@Body map: HashMap<String?, String?>): Call<User>?
-
     @Headers("Content-Type:application/json")
     @GET("api/user/index")
-    fun getUsers(): Call<List<users>>
-
+    fun getUsers(): Call<ArrayList<User>>
     @Headers("Content-Type:application/json")
     @DELETE("api/user/delete/{userId}")
     fun deleteUser(@Path("userId") userId :String): Call<DeteleResponse>?

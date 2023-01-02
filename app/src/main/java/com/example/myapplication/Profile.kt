@@ -8,7 +8,9 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
+import androidx.constraintlayout.widget.ConstraintLayout
 import com.example.myapplication.api.RetrofitBuilder
 import com.example.myapplication.models.modelResponse.ShowResponse
 import com.google.android.material.textfield.TextInputEditText
@@ -34,8 +36,11 @@ class Profile : AppCompatActivity() {
 
         val Class=findViewById<TextView>(R.id.TX7)
         val filiere=findViewById<TextView>(R.id.TX8)
-
+        val settings=findViewById<ImageView>(R.id.imageView5)
         btn = findViewById(R.id.b4)
+
+
+
 
 //get user connected
         val sharedPref= this.getSharedPreferences("userConnected", Context.MODE_PRIVATE)
@@ -61,7 +66,10 @@ class Profile : AppCompatActivity() {
             val intent = Intent(this, fragmentProfile::class.java)
             startActivity(intent)
         }
-
+        settings.setOnClickListener( View.OnClickListener {
+            val intent = Intent(this, SettingsFragment::class.java)
+            startActivity(intent)
+        })
 
     }
 }
